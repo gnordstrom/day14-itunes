@@ -11,12 +11,13 @@
       <div class="container">
         <div id="myContainer">
           <div class="navbar-header">
-            <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-music"></span> DevTunes</a>
+            <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-music"></span> <span class="title">DevTunes</span></a>
           </div>
           <form class="navbar-form navbar-left" role="search">
             <div class="form-group">
               <input type="text" class="form-control" ng-model="artist" placeholder="Artist Name" >
-              <button class="btn btn-primary" ng-click="getSongData()"> Submit </button>
+              <button class="btn btn-primary" ng-click="getSongData(artist)"> Submit </button>
+              <!-- <h3>Filter</h3> <input type='text' class='form-control' ng-model='filterOptions.filterText'> -->
             </div>
           </form>
         </div>
